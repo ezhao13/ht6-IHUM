@@ -5,7 +5,7 @@ import './AboutHum.css';
 const AboutHum = () => {
   return (
     <div className="about-hum">
-      <h2>About US</h2>
+      <h2>About Us</h2>
 
       <p>Welcome to iHum, where your musical journey begins with a hum. Our innovative AI application
 transforms your vocal melodies into MIDI instruments, allowing you to create music effortlessly,

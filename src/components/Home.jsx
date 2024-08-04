@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { PitchDetector } from 'pitchy';
+import logo from './logo.png';
 import './Home.css';
 
 const INSTRUMENTS = {
@@ -169,6 +170,8 @@ function Home() {
   };
 
   return (
+    <>
+    <div className='home-logo'><img src={logo} alt="Logo" className="logo" /></div>
     <div className="home-container">
       <h1 className="home-title">MP3 to Instrument Converter</h1>
       <label className="home-input-label" htmlFor="home-input">
@@ -205,6 +208,7 @@ function Home() {
         {isRecording ? 'Stop Recording' : 'Start Recording'}
       </button>
     </div>
+    </>
   );
 }
 

@@ -23,7 +23,7 @@ const Profile = () => {
 
       <button 
         className="profile-button" 
-        onClick={() => navigate("/")} // Redirect to Home page
+        onClick={() => navigate("/home")} // Redirect to Home page
       >
         Go to Home
       </button>
