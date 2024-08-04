@@ -21,19 +21,42 @@ const Profile = () => {
       <h2 className="profile-name">{user.name}</h2>
       <p className="profile-email">{user.email}</p>
 
+      <div>
       <button 
         className="profile-button" 
         onClick={() => navigate("/home")} // Redirect to Home page
       >
-        Go to Home
+        Home
       </button>
       
+      <button 
+        className="profile-button" 
+        onClick={() => navigate("/about")} // Redirect to About page
+      >
+        About
+      </button>
+      </div>
+      
+      <div>
+      <button 
+        className="profile-button" 
+        onClick={() => navigate("/pricing")} // Redirect to Pricing page
+      >
+        Pricing
+      </button>
+
+      <div style={{ height: '20px' }}></div>
+
+      <div>
       <button 
         className="profile-button" 
         onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
       >
         Log Out
       </button>
+      </div>
+      </div>
+      
     </div>
   );
 };
