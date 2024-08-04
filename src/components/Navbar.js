@@ -1,38 +1,37 @@
+// src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../AuthContext';
-import { signOut } from 'firebase/auth';
-import { auth } from '../firebaseConfig';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { currentUser } = useAuth();
-
-  const handleLogout = async () => {
-    try {
-      await signOut(auth);
-    } catch (error) {
-      console.error('Error signing out:', error);
-    }
-  };
-
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">iHum</Link>
-        <div className="navbar-links">
-          {currentUser ? (
-            <>
-              <span className="navbar-user">Hello, {currentUser.email}</span>
-              <button onClick={handleLogout} className="navbar-button">Logout</button>
-            </>
-          ) : (
-            <>
-              <Link to="/login" className="navbar-link">Login</Link>
-              <Link to="/signup" className="navbar-link">Sign Up</Link>
-            </>
-          )}
-        </div>
+        <Link to="/" className="navbar-logo">
+          iHum
+        </Link>
+        <ul className="navbar-menu">
+          <li className="navbar-item">
+            <Link to="/" className="navbar-link">
+              Home
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/about" className="navbar-link">
+              About
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/pricing" className="navbar-link">
+              Pricing
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/profile" className="navbar-link">
+              Profile
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

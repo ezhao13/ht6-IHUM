@@ -1,38 +1,68 @@
+/* src/components/Navbar.css */
 .navbar {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  padding: 1rem 2rem; /* Padding around navbar */
+  position: fixed; /* Fixed at the top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it's above other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Center the content */
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 2rem; /* Logo size */
+  font-family: 'Arial', sans-serif; /* Font style */
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 1.5rem; /* Space between items */
+}
+
+.navbar-link {
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Font size */
+  padding: 0.5rem 1rem; /* Padding around links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-link:hover {
+  color: #f0f0f0; /* Hover color */
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    display: none; /* Hide menu by default on small screens */
   }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
   }
-  
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+
+  .navbar-item {
+    margin: 0.5rem 0; /* Space between items in mobile view */
   }
-  
-  .navbar-links {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-link, .navbar-user {
-    margin-right: 1rem;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .navbar-button {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
+}
+
   

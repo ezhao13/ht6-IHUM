@@ -1,6 +1,7 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import './Login.css';
 
 const Login = () => {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
@@ -13,9 +14,10 @@ const Login = () => {
   }, [isAuthenticated, navigate]);
 
   return (
-    <div>
-      {console.log(process.env.REACT_APP_DOMAIN)}
-      <button onClick={() => loginWithRedirect()}>Log In</button>
+    <div className="login-container">
+      <button className="login-button" onClick={() => loginWithRedirect()}>
+        Log In
+      </button>
     </div>
   );
 };

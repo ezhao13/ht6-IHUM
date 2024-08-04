@@ -1,47 +1,34 @@
+/* Login.css */
+
 .login-container {
-    max-width: 400px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  .login-title {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  .login-error {
-    background-color: #f44336;
-    color: white;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 4px;
-  }
-  .login-form {
-    display: flex;
-    flex-direction: column;
-  }
-  .login-field {
-    margin-bottom: 1rem;
-  }
-  .login-label {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  .login-input {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  .login-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5; /* Light gray background */
+  min-height: 100vh;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.login-button {
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Stylish gradient */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d7a); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.login-button:disabled {
+  background-color: #ddd; /* Gray background for disabled state */
+  cursor: not-allowed; /* Not allowed cursor for disabled state */
+}
