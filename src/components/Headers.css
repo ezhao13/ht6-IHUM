@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  position: relative; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(to right, #302948, #7b78ba, #a585b9, #c4aae0);
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-size: 270px; /* Large font size */
+  font-family: 'Arial', sans-serif; /* Sans-serif font */
+  position: absolute; 
+  top: -30px; 
+  margin: 0;
+}
+
+.logo {
+  min-height: 70%; /* Adjust the height as needed */
+  min-width: 35%;
+  margin-top: 180px; /* Space between title and logo */
+}

@@ -1,0 +1,97 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(151, 123, 191);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.home-title {
+  margin-bottom: 4rem;
+  font-size: 3.5rem;
+  font-family: Georgia;
+  font-weight: bold;
+  text-align: left;
+}
+
+.home-upload {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: Georgia;
+  text-align: left;
+}
+
+.home-input {
+  display: none;
+}
+
+.home-dropdown {
+  background-color: #6f00ff; 
+  color: white; 
+  border: none; 
+  padding: 0.75rem; 
+  border-radius: 4px; 
+  text-align: center; 
+  font-size: 30px; 
+  cursor: pointer; 
+}
+
+.home-dropdown:focus {
+  outline: none; 
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+}
+
+.home-input-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 34px; /* Increase font size */
+  padding: 1rem; /* Increase padding */
+  background-color: rgb(66, 214, 66); /* Change background color to green */
+  color: white; /* Change text color to white for better contrast */
+  border: 4px solid rgb(71, 68, 68);
+  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+  width: fit-content;
+  cursor: pointer; /* Add pointer cursor */
+}
+
+.home-button {
+  background-color: #6f00ff; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 15px 32px; /* Padding */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1.25rem; /* Increase font size */
+  cursor: pointer; /* Pointer cursor */
+  text-align: center; /* Center text */
+  margin-top: 1rem; /* Margin on top */
+}
+
+.home-button:hover {
+  background-color: #5400c1; /* Darker green on hover */
+}
+
+.home-button:disabled {
+  background-color: #ccc; /* Gray background for disabled state */
+  cursor: not-allowed; /* Not allowed cursor for disabled state */
+}
+
+.home-stop-button {
+  background-color: #6f00ff;
+  color: white;
+  border: none;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin-top: 1rem;
+}
+
+.home-stop-button:hover {
+  background-color: #5400c1; /* Darker green on hover */
+}
+
+.home-stop-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
