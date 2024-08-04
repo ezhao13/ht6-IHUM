@@ -1,34 +1,47 @@
-/* Login.css */
-
-.login-container {
+/* Center the content and add a background */
+.login-page {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background-color: #f5f5f5; /* Light gray background */
-  min-height: 100vh;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(to right, #e0e0e0, #f0f0f0); /* Soft gradient background */
   padding: 2rem;
-  border-radius: 10px;
 }
 
-.login-button {
-  background: linear-gradient(135deg, #007bff, #0056b3); /* Stylish gradient */
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  font-size: 1.25rem;
-  cursor: pointer;
+/* Center the logo and add some margin */
+.home-logo {
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 250px; /* Adjust the width as needed */
+  height: 150px; /* Maintain aspect ratio */
+}
+
+/* Style the login container */
+.login-container {
+  background: #ffffff; /* White background */
+  padding: 2rem;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Style the login button */
+.login-button {
+  background-color: #6f00ff; /* Purple background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 0.75rem 1.5rem; /* Padding */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1.25rem; /* Increase font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
 }
 
 .login-button:hover {
-  background: linear-gradient(135deg, #0056b3, #003d7a); /* Darker gradient on hover */
-  transform: translateY(-2px); /* Slight lift effect */
+  background-color: #5400c1; /* Darker purple on hover */
 }
 
-.login-button:disabled {
-  background-color: #ddd; /* Gray background for disabled state */
-  cursor: not-allowed; /* Not allowed cursor for disabled state */
-}
