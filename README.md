@@ -73,3 +73,4 @@ Join us at iHum and transform your musical thoughts into reality. Your journey f
   - **Unique Mental Landscapes:** Highlight the uniqueness of each user's musical ideas and how iHum brings them to life.
 
 **Equity in Our Melody:** iHum Unleashes Musical Potential for Everyone.
+# hackthesix
